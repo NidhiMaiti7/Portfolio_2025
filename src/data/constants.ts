@@ -36,7 +36,7 @@ export const Bio = {
   name: "Nidhi Maiti",
   roles: ["React Native Developer", "Web Developer", "Software Engineer"],
   description:
-    "A passionate Software Developer with over 2+ years of experience in building responsive web and scalable mobile applications. Proficient in front-end and database management. Adept at integrating real-time features, optimizing performance, and ensuring seamless cross-platform functionality. Skilled in collaborating with cross-functional teams to deliver reliable, user-focused solutions.",
+    "A passionate Software Developer with 2+ years of experience in building responsive web and scalable mobile applications. Proficient in front-end and database management. Adept at integrating real-time features, optimizing performance, and ensuring seamless cross-platform functionality. Skilled in collaborating with cross-functional teams to deliver reliable, user-focused solutions.",
   github: "https://github.com/NidhiMaiti7",
   resume: "https://drive.google.com/file/d/1a7aGe3EQhZ-pyvNKa16tcqVJeiaWGpTf/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/nidhi-maiti-5a061b283/",
