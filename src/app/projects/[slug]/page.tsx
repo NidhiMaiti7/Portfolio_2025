@@ -9,6 +9,7 @@ import { Badge } from '@/components/ui/badge';
 import { ArrowLeft, Github, Link as LinkIcon, Users, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { ImageCarousel } from '@/components/ui/ImageCarousel';
 
 export default function ProjectDetailPage() {
   const params = useParams<{ slug: string }>();
@@ -32,14 +33,18 @@ export default function ProjectDetailPage() {
             <div className="lg:col-span-3">
                 <Card className="w-full overflow-hidden rounded-2xl shadow-lg">
                     <CardHeader className="p-0">
-                        <Image
-                            src={project.image}
-                            alt={project.title}
-                            width={1200}
-                            height={600}
-                            className="object-cover aspect-video w-full"
-                            data-ai-hint="project image"
-                        />
+                        {project.images && project.images.length > 0 ? (
+                            <ImageCarousel images={project.images} alt={project.title} />
+                        ) : (
+                            <Image
+                                src={project.image}
+                                alt={project.title}
+                                width={1200}
+                                height={600}
+                                className="object-cover aspect-video w-full"
+                                data-ai-hint="project image"
+                            />
+                        )}
                     </CardHeader>
                     <CardContent className="p-6 md:p-8">
                         <CardTitle className="text-3xl font-bold text-primary mb-2">{project.title}</CardTitle>
@@ -99,8 +104,9 @@ export default function ProjectDetailPage() {
                         </div>
                         )}
 
+                        {(project.github?.trim() || project.webapp?.trim()) && (
                         <div className="flex flex-wrap gap-4 pt-4 border-t border-border/20">
-                           {project.github && (
+                           {project.github?.trim() && (
                                 <Button asChild variant="outline" className="border-primary text-primary hover:text-primary hover:bg-primary/10 rounded-full flex-1">
                                 <Link href={project.github} target="_blank">
                                     <Github className="mr-2 h-4 w-4" />
@@ -108,7 +114,7 @@ export default function ProjectDetailPage() {
                                 </Link>
                                 </Button>
                             )}
-                            {project.webapp && (
+                            {project.webapp?.trim() && (
                                 <Button asChild className="bg-primary text-primary-foreground hover:bg-accent rounded-full flex-1">
                                     <Link href={project.webapp} target="_blank">
                                     <LinkIcon className="mr-2 h-4 w-4" />
@@ -117,6 +123,7 @@ export default function ProjectDetailPage() {
                                 </Button>
                             )}
                         </div>
+                        )}
 
                     </CardContent>
                 </Card>

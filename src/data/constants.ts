@@ -15,10 +15,11 @@ export type Project = {
     image: string;
     tags: string[];
     category: string;
-    github: string;
+    github?: string;
     webapp?: string;
     member?: ProjectMember[];
     achievements?: string[];
+    images?: string[];
 };
 
 export type Certificate = {
@@ -35,9 +36,9 @@ export const Bio = {
   name: "Nidhi Maiti",
   roles: ["React Native Developer", "Web Developer", "Software Engineer"],
   description:
-    "A passionate Software Developer with 1+ year of experience in building responsive web and scalable mobile applications. Proficient in front-end and database management. Adept at integrating real-time features, optimizing performance, and ensuring seamless cross-platform functionality. Skilled in collaborating with cross-functional teams to deliver reliable, user-focused solutions.",
+    "A passionate Software Developer with over 2+ years of experience in building responsive web and scalable mobile applications. Proficient in front-end and database management. Adept at integrating real-time features, optimizing performance, and ensuring seamless cross-platform functionality. Skilled in collaborating with cross-functional teams to deliver reliable, user-focused solutions.",
   github: "https://github.com/NidhiMaiti7",
-  resume: "https://drive.google.com/file/d/1Yn3LqkUeXKrtUyU5sv0N-2KtcgeOqJvF/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/1a7aGe3EQhZ-pyvNKa16tcqVJeiaWGpTf/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/nidhi-maiti-5a061b283/",
   twitter: "https://twitter.com/nidhi-maiti",
   insta: "https://www.instagram.com/nidhi-maiti/",
@@ -47,14 +48,13 @@ export const Bio = {
       title: "Programming & Web",
       skills: [
         {
-          name: "React Native",
+          name: "ReactJS",
           image:
             "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
         },
         {
-          name: "ReactJS",
-          image:
-            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
+          name: "Next.js",
+          image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
         },
         {
           name: "TypeScript",
@@ -62,24 +62,43 @@ export const Bio = {
         },
         {
           name: "JavaScript",
-          image:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+          image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+        },
+        {
+          name: "Redux",
+          image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
+        },
+        {
+          name: "React Query",
+          image: "https://raw.githubusercontent.com/TanStack/query/main/packages/react-query/logo/logo.svg",
         },
         {
           name: "Jest",
           image: "https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg",
         },
         {
-          name: "CSS",
-          image:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
-        },
-        {
-          name: "Bootstrap",
-          image:
-            "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
+          name: "React Navigation",
+          image: "https://reactnavigation.org/img/spiro.svg",
         },
       ],
+    },
+    {
+      title: "Mobile Development",
+      skills: [
+        {
+          name: "React Native",
+          image:
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
+        },
+        {
+          name: "iOS",
+          image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/apple/apple-original.svg",
+        },
+        {
+          name: "Android",
+          image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original.svg",
+        },
+      ]
     },
     {
       title: "Backend & Database",
@@ -96,6 +115,32 @@ export const Bio = {
         {
           name: "Postman",
           image: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
+        },
+        {
+          name: "GraphQL",
+          image: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg",
+        },
+        {
+            name: "REST APIs",
+            image: "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_restql_icon_130438.png"
+        }
+      ],
+    },
+     {
+      title: "UI/UX & Frameworks",
+      skills: [
+           {
+          name: "Tailwind CSS",
+          image: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
+        },
+        {
+          name: "CSS",
+          image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
+        },
+        {
+          name: "Bootstrap",
+          image:
+            "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
         },
       ],
     },
@@ -121,12 +166,20 @@ export const Bio = {
           image: "https://www.vectorlogo.zone/logos/atlassian_jira/atlassian_jira-icon.svg",
         },
         {
+            name: "Trello",
+            image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/trello/trello-plain.svg"
+        },
+        {
           name: "Android Studio",
           image: "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png",
         },
         {
           name: "Xcode",
           image: "https://developer.apple.com/assets/elements/icons/xcode/xcode-128x128_2x.png"
+        },
+        {
+            name: "CI/CD",
+            image: "https://www.svgrepo.com/show/306403/cicd.svg"
         }
       ],
     },
@@ -136,9 +189,9 @@ export const Bio = {
       id: 0,
       img: "https://media.designrush.com/agencies/289332/conversions/Zestgeek-Solutions-logo-profile.jpg",
       role: "Software Engineer",
-      company: "ZestGeek Solutions Pvt. Ltd.",
+      company: "ZestGeek Solutions",
       date: "Jul 2025 – Present",
-      desc: "My role involves building cross-platform mobile applications and developing responsive web solutions. Currently, I am working on projects like the Driver Mobile App for Maguy Non-Emergency Medical Transport, which streamlines trip management for drivers with real-time navigation, earnings tracking, and reporting, as well as the Maguy Medical Transport website, which supports the administrative operations linked to the mobile app. My focus is on delivering scalable, user-friendly, and efficient solutions that enhance both user experience and operational productivity.",
+      desc: "Developed React Native features and reusable UI components, integrated Google Maps, REST APIs, and real-time sockets. Implemented in-app calling, push notifications, and real-time data synchronization with backend services. Resolved production issues, optimized performance, and improved application stability.",
       skills: [
         "React Native",
         "React.js",
@@ -152,7 +205,7 @@ export const Bio = {
       role: "React Native Developer",
       company: "Deqode",
       date: "Jun 2024 – Jun 2025",
-      desc: "Contributed to the development and maintenance of cross-platform mobile applications using React Native. Ensured optimal performance and functionality across both Android and iOS platforms. Optimized app performance, resulting in a 25% reduction in load time and increased user engagement.",
+      desc: "Developed cross-platform mobile applications, delivering scalable features for iOS and Android. Integrated APIs, optimized performance, and resolved critical bugs to improve user experience.",
       skills: [
         "React Native",
         "Android",
@@ -163,10 +216,10 @@ export const Bio = {
     {
       id: 2,
       img: "https://custpostimages.s3.ap-south-1.amazonaws.com/18220/1712583450322.png",
-      role: "Full-Stack Web Development Internship",
+      role: "Frontend Web Development Intern",
       company: "YHILLS - Learning Beyond Expectation",
       date: "Jan 2024 – May 2024",
-      desc: "Collaborated with the core team to enhance website features using the MERN stack (MongoDB, Express.js, ReactJS, Node.js). Built reusable front-end components and contributed to RESTful backend services, enhancing site scalability. Participated in CMS configuration and comprehensive QA testing, ensuring 100% functionality before deployment. Improved mobile responsiveness and cross-browser compatibility, enhancing user access across devices.",
+      desc: "Developed responsive and reusable frontend components for a Hotel Booking Management System (Admin Panel). Built dashboard interfaces, booking management screens, and form-based workflows.",
       skills: ["MongoDB", "Express.js", "ReactJS", "Node.js", "MERN", "RESTful APIs"],
     },
   ],
@@ -175,10 +228,10 @@ export const Bio = {
       id: 0,
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtaFV33HLb9Tyn_VZhvmuMnJuIPEXBgCwqNeWuhK3T839VePPV4KbGaA5eD8be3JxoJcg&usqp=CAU",
       school: "Uttaranchal University, Dehradun",
-      date: "Sep 2022 – Jun 2024",
+      date: "Sep 2022 – May 2024",
       grade: "",
       desc: "I recently completed my MCA in Cloud Computing from Uttaranchal University, Dehradun, with expertise in web design, cloud infrastructure, and application deployment. Skilled in  JavaScript, databases, and AWS, with experience building and deploying full-stack, cloud-based applications. Proficient in integrating real-time features, following Agile methodologies, and using version control tools.",
-      degree: "MCA in Cloud Computing",
+      degree: "Master of Computer Applications",
     },
      {
       id: 1,
@@ -192,22 +245,90 @@ export const Bio = {
   ],
   projects: [
     {
+      id: 7,
+      slug: "our-shared-homes",
+      title: "Our Shared Homes — Home Exchange Web Platform",
+      date: "Feb 2026 – Present",
+      description: 
+`Developed the member-facing home-exchange platform using Next.js 16 (App Router) and React 19, enabling property listings, home search, exchanges, referrals, reviews, and OSH Credits-based bookings. Built dashboard navigation and core workflows, including a multi-step listing wizard, Google Maps/Places and exchange management. Implemented real-time messaging with Socket.IO, featuring conversations, read receipts, presence tracking, stay requests, agreements. Developed the OSH Credits module with Stripe integration, balance tracking, credit gifting, and booking workflows.`,
+      image: "/projects/our-shared-homes/image.png",
+      tags: ['Next.js', 'React.js', 'Socket.IO', 'Stripe', 'Google Maps API'],
+      category: "web app",
+      github: "https://osh-frontend-preview.vercel.app",
+      webapp: "",
+      images: [
+        "/projects/our-shared-homes/image-1.png",
+        "/projects/our-shared-homes/image-2.png",
+        "/projects/our-shared-homes/image-3.png",
+        "/projects/our-shared-homes/image-4.png",
+        "/projects/our-shared-homes/image-5.png"
+      ],
+      achievements: [
+          "Developed a multi-step listing wizard, streamlining the process of adding new properties.",
+          "Implemented a secure booking system with OSH Credits and Stripe integration.",
+          "Built a real-time messaging system with Socket.IO for seamless communication.",
+          "Integrated Google Maps and Places for enhanced property search and location services."
+      ]
+    },
+    {
+      id: 6,
+      slug: "mpower-pro-app",
+      title: "MPower Pro Mobile App",
+      date: "Jul 2025 – Present",
+      description: 
+`Developed the frontend for MPower Pro, a React Native mobile app for music creation, wellness content, goal tracking, and social challenges on iOS and Android. Built core screens and tab navigation (Today View, Explore, Beat Library/Create, Challenges, Community, and News Feed) using React Navigation, Redux, and TypeScript/JavaScript. Implemented key product features including the Beat Library and in-app rap/sing recording, challenge uploads with celebration flows, Today View mood and goal tracking, Explore master classes and workouts, and community chat via CometChat. Integrated Firebase push notifications, background media uploads, in-app subscriptions, deep linking, and Amplitude analytics to improve engagement, retention, and app stability.`,
+      image: "/projects/mpower-pro-app/image.png",
+      tags: ["React Native", "TypeScript", "JavaScript", "Redux", "Firebase", "CometChat", "Amplitude"],
+      category: "mobile app",
+      github: "https://apps.apple.com/in/app/mpower-pro/id6443431786",
+      webapp: "",
+      images: [
+        "/projects/mpower-pro-app/image-1.png",
+        "/projects/mpower-pro-app/image-2.png",
+        "/projects/mpower-pro-app/image-3.png",
+        "/projects/mpower-pro-app/image-4.png"
+      ],
+      achievements: [
+        "Built a comprehensive music creation and wellness app with a focus on user engagement.",
+        "Implemented a beat library and recording functionality for in-app music creation.",
+        "Integrated social features such as challenges, community chat, and a news feed.",
+        "Enhanced app stability and user retention through analytics and push notifications."
+    ]
+    },
+    {
       id: 0,
       slug: "driver-mobile-app",
       title: "Driver Mobile App (Maguy Non-Emergency Medical Transport)",
-      date: "Jul 2025 - Present",
+      date: "Jul 2025 - Sep 2025",
       description: 
 `The Non-Emergency Medical Transport (NEMT) Driver App enables registered drivers to manage patient trips efficiently with real-time updates and easy navigation.`,
       image: "https://drive.google.com/uc?export=view&id=1XKSshxm-R5EqdegLA7E3yVH0q4M7sQGO",
       tags: ["React Native", "TypeScript", "JavaScript", "Socket.io", "Node.js", "Firebase", "REST API"],
       category: "mobile app",
-      github: "https://github.com/nidhi-maiti",
       webapp: "",
       achievements: [
         "Enabled real-time ride management with live navigation and trip status updates.",
         "Integrated secure authentication and user-friendly earnings tracking.",
         "Provided instant incident reporting and vehicle maintenance scheduling.",
         "Designed a scalable architecture for handling single and multiple drop-off locations."
+      ],
+    },
+    {
+      id: 5,
+      slug: "maguy-transport-website",
+      title: "MaGuy Medical Transport Website",
+      date: "Jul 2025 - Sep 2025",
+      description: 
+`This website supports the administrative operations of the Maguy Non-Emergency Medical Transport service.`,
+      image: "https://drive.google.com/uc?export=view&id=1F8uwNQnSQV1vzOlGlW68SR9iH157lvyQ",
+      tags: ["React.js", "TypeScript", "Node.js", "Firebase", "REST API"],
+      category: "web app",
+      webapp: "",
+      achievements: [
+        "Developed a responsive and user-friendly administrative dashboard.",
+        "Ensured seamless integration with backend services for the driver mobile app.",
+        "Built with a focus on scalability to support growing operational needs.",
+        "Implemented secure and efficient data management for drivers and trips."
       ],
     },
     {
@@ -220,7 +341,6 @@ export const Bio = {
       image: "https://drive.google.com/uc?export=view&id=1QrUEN3-smq4nGlsCRBglpC5B8sdA83Cs",
       tags: ['React Native', 'TypeScript', 'JavaScript', 'REST API', 'GitLab CI/CD', 'Jest', 'Firestore'],
       category: "mobile app",
-      github: "https://github.com/nidhi-maiti",
       webapp: "",
        achievements: [
         "Boosted app functionality by 30% through targeted bug fixes and enhancements.",
@@ -239,7 +359,6 @@ export const Bio = {
       image: "https://drive.google.com/uc?export=view&id=1FeiBDVTC1hJ0zGO__6hIsrleZBoSHaZ0",
       tags: ['React Native', 'Redux', 'Firebase', 'JavaScript', 'REST API'],
       category: "mobile app",
-      github: "https://github.com/nidhi-maiti",
       webapp: "",
       achievements: [
         "Launched a multi-functional app for property rental, sales, and hostel management.",
@@ -258,7 +377,6 @@ export const Bio = {
         image: "https://drive.google.com/uc?export=view&id=1pRgV85Vg6xRhO1DVUcin8gE54tGWA72T",
         tags: ["React Native", "JavaScript", "REST API", "Jest", "Enzyme"],
         category: "mobile app",
-        github: "https://github.com/nidhi-maiti",
         webapp: "",
         achievements: [
           "Implemented key UI screens and integrated backend APIs for live contractor data.",
@@ -276,7 +394,6 @@ export const Bio = {
       image: "https://drive.google.com/uc?export=view&id=18ooMeWsJ2ej7QcDdqAxEMf1mapUcMa3U",
       tags: ["MERN", "MongoDB", "Express.js", "ReactJS", "Node.js"],
       category: "web app",
-      github: "https://github.com/nidhi-maiti",
       webapp: "",
       achievements: [
         "Enhanced website features and scalability using the MERN stack.",
@@ -284,26 +401,7 @@ export const Bio = {
         "Ensured 100% functionality through comprehensive QA testing before deployment.",
         "Improved mobile responsiveness and cross-browser compatibility."
       ],
-    },
-     {
-      id: 5,
-      slug: "maguy-transport-website",
-      title: "MaGuy Medical Transport Website",
-      date: "Jul 2025 - Present",
-      description: 
-`This website supports the administrative operations of the Maguy Non-Emergency Medical Transport service.`,
-      image: "https://drive.google.com/uc?export=view&id=1F8uwNQnSQV1vzOlGlW68SR9iH157lvyQ",
-      tags: ["React.js", "TypeScript", "Node.js", "Firebase", "REST API"],
-      category: "web app",
-      github: "https://github.com/nidhi-maiti",
-      webapp: "",
-      achievements: [
-        "Developed a responsive and user-friendly administrative dashboard.",
-        "Ensured seamless integration with backend services for the driver mobile app.",
-        "Built with a focus on scalability to support growing operational needs.",
-        "Implemented secure and efficient data management for drivers and trips."
-      ],
-    },
+    }
   ] as Project[],
   certificates: [
     {

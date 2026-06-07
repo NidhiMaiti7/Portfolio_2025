@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { Bio } from "@/data/constants";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";

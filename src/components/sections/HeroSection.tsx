@@ -115,7 +115,7 @@ const HeroSection = () => {
                   <HeroBgAnimation />
               </div>
               <Image
-                src="https://drive.google.com/uc?export=view&id=179yiFlM4J6Y3I1pevARevS1Em8qOurPU"
+                src="https://drive.google.com/uc?export=view&id=16j7k1FQ6M9-2_dRQ_Yj2v-EmmwCjQl4y"
                 alt="Hero Image"
                 width={400}
                 height={400}
